@@ -1,0 +1,24 @@
+﻿
+
+
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Id</th>
+                    <th>Nome</th>
+                    <th>Descricao</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cat in ViewBag.Categorias)
+                {
+                    <tr>
+                        <td>@cat.Id</td>
+                        <td>@cat.Nome</td>
+                        <td>@cat.Descricao</td>
+
+                    </tr>
+                }
+                <li class="btn btn-group-sm"> @Html.ActionLink("Cadastrar Categoria", "Form", "Categoria")</li>
+            </tbody>
+        </table>

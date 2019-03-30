@@ -1,0 +1,29 @@
+﻿
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+    <link rel="stylesheet" href="~/Content/css/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/css/Site.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h3 class="muted-text"> Estoque Loja</h3>
+            <ul class="nav nav-pills pull-right">
+                <li class="btn btn-light">@Html.ActionLink("Home", "Index", "Home")</li>
+                <li class="btn btn-light">@Html.ActionLink("Produtos", "Index", "Produto")</li>
+                <li class="btn btn-light">@Html.ActionLink("Categorias", "Index", "Categoria")</li>
+                <li class="btn btn-light">@Html.ActionLink("Usuário", "UserTela", "Login")</li>
+
+            </ul>
+        </div>
+        <div id="conteudo">
+        @RenderBody()
+        </div>
+    </div>
+</body>
+</html>
